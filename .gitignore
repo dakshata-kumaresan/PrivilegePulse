@@ -1,0 +1,26 @@
+
+# Environment variables and secrets
+.env
+.env.*
+
+# Python virtual environment
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Databases
+*.db
+*.sqlite3
+
+# Ignore all CloudTrail JSON files by default
+data/*.json
+
+# Allow only sanitized demo data
+!data/demo_cloudtrail_events.json
+
+# OS files
+.DS_Store
+Thumbs.db

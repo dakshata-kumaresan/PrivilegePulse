@@ -1,0 +1,40 @@
+
+{
+  "Records": [
+    {
+      "eventID": "DEMO-EVENT-001",
+      "eventName": "CreateAccessKey",
+      "eventSource": "iam.amazonaws.com",
+      "sourceIPAddress": "203.0.113.10",
+      "eventTime": "2026-11-20T10:00:00Z",
+      "userIdentity": {
+        "type": "IAMUser",
+        "userName": "demo-security-user"
+      }
+    },
+    {
+      "eventID": "DEMO-EVENT-002",
+      "eventName": "DetachRolePolicy",
+      "eventSource": "iam.amazonaws.com",
+      "sourceIPAddress": "198.51.100.20",
+      "eventTime": "2026-11-20T10:05:00Z",
+      "userIdentity": {
+        "type": "IAMUser",
+        "userName": "demo-audit-user"
+      }
+    },
+    {
+      "eventID": "DEMO-EVENT-003",
+      "eventName": "CreateAccessKey",
+      "eventSource": "iam.amazonaws.com",
+      "sourceIPAddress": "192.0.2.30",
+      "eventTime": "2026-11-20T10:10:00Z",
+      "errorCode": "AccessDenied",
+      "errorMessage": "User is not authorized to perform this operation.",
+      "userIdentity": {
+        "type": "IAMUser",
+        "userName": "demo-test-user"
+      }
+    }
+  ]
+}
